@@ -1,0 +1,15 @@
+{
+    "name": "wataridori/bias-random",
+    "description": "Random element(s) with weight",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Tran Duc Thang",
+            "email": "thangtd90@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"wataridori\\BiasRandom\\": "src/"}
+    },
+    "minimum-stability": "dev"
+}

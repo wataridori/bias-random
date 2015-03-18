@@ -85,7 +85,7 @@ class BiasRandom
     }
 
     /**
-     * Get randomed data
+     * Get random data
      * @param int $count
      * @return array
      */
@@ -94,6 +94,9 @@ class BiasRandom
         $data = $this->data;
         $result = [];
         for ($i = 0; $i < $count; $i++) {
+            if (!$data) {
+                break;
+            }
             $name = $this->getRandom($data);
             $result[] = $name;
             unset($data[$name]);

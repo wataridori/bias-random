@@ -1,5 +1,6 @@
 BiasRandom for PHP
 ==========
+[![StyleCI](https://styleci.io/repos/32437387/shield)](https://styleci.io/repos/32437387)
 [![Build Status](https://travis-ci.org/wataridori/bias-random.svg)](https://travis-ci.org/wataridori/bias-random)
 [![Latest Stable Version](https://poser.pugx.org/wataridori/bias-random/v/stable.svg)](https://packagist.org/packages/wataridori/bias-random)
 [![Total Downloads](https://poser.pugx.org/wataridori/bias-random/downloads.svg)](https://packagist.org/packages/wataridori/bias-random)
@@ -24,7 +25,7 @@ Or add `wataridori/bias-random` into the require section of your `composer.json`
 ```php
 $biasRandom = new wataridori/BiasRandom/BiasRandom();
 $data = [
-    'wataridori' => 10, 
+    'wataridori' => 10,
 ];
 $biasRandom->setData($data);
 $biasRandom->addElement('Tran', 20);

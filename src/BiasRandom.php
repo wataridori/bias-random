@@ -6,13 +6,15 @@ class BiasRandom
 {
     /**
      * The data that will be randomed
-     * Data structure [name_1 => weight_1, name_2 => weight_2]
+     * Data structure [name_1 => weight_1, name_2 => weight_2].
+     *
      * @var array
      */
     protected $data = [];
 
     /**
-     * Constructor
+     * Constructor.
+     *
      * @param array $data
      */
     public function __construct($data = [])
@@ -21,9 +23,11 @@ class BiasRandom
     }
 
     /**
-     * Add an element to $data
+     * Add an element to $data.
+     *
      * @param string|int $name
      * @param int $weight
+     *
      * @return bool
      */
     public function addElement($name, $weight)
@@ -37,7 +41,8 @@ class BiasRandom
     }
 
     /**
-     * Remove an item from $data
+     * Remove an item from $data.
+     *
      * @param string|int $name
      */
     public function removeElement($name)
@@ -46,7 +51,8 @@ class BiasRandom
     }
 
     /**
-     * Set $data
+     * Set $data.
+     *
      * @param array $data
      */
     public function setData($data)
@@ -55,7 +61,8 @@ class BiasRandom
     }
 
     /**
-     * Get current $data
+     * Get current $data.
+     *
      * @return array
      */
     public function getData()
@@ -64,8 +71,10 @@ class BiasRandom
     }
 
     /**
-     * Random with bias from data array
+     * Random with bias from data array.
+     *
      * @param array $data
+     *
      * @return int|string
      */
     private function getRandom($data)
@@ -85,8 +94,10 @@ class BiasRandom
     }
 
     /**
-     * Get random data
+     * Get random data.
+     *
      * @param int $count
+     *
      * @return array
      */
     public function random($count = 1)

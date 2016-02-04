@@ -53,25 +53,25 @@ class ChatworkBaseTest extends PHPUnit_Framework_TestCase
 
         $random = $biasRandom->random();
         $this->assertCount(1, $random);
-        foreach($random as $key) {
+        foreach ($random as $key) {
             $this->assertArrayHasKey($key, $originalData);
         }
 
         $random = $biasRandom->random(2);
         $this->assertCount(2, $random);
-        foreach($random as $key) {
+        foreach ($random as $key) {
             $this->assertArrayHasKey($key, $originalData);
         }
 
         $random = $biasRandom->random(3);
         $this->assertCount(3, $random);
-        foreach($random as $key) {
+        foreach ($random as $key) {
             $this->assertArrayHasKey($key, $originalData);
         }
 
         $random = $biasRandom->random(4);
         $this->assertCount(3, $random);
-        foreach($random as $key) {
+        foreach ($random as $key) {
             $this->assertArrayHasKey($key, $originalData);
         }
     }
